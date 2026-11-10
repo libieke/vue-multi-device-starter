@@ -1,0 +1,17 @@
+@use './variables.scss' as *;
+@use './reset.scss';
+
+.page-container { width: 100%; min-width: 0; }
+.page-title { margin: 0 0 18px; font-size: 22px; font-weight: 650; }
+.panel {
+  min-width: 0; padding: 20px; border-radius: 12px;
+  background: #fff; box-shadow: 0 2px 12px rgba(30, 55, 90, .04);
+}
+.panel-title { margin: 0 0 16px; font-size: 16px; font-weight: 600; }
+.muted { color: #8b98a8; }
+@media (max-width: 767px) {
+  .page-title { margin-bottom: 14px; font-size: 19px; }
+  .panel { padding: 14px; border-radius: 10px; }
+}
+.dark-theme body { color: #e7edf5; background: #141a24; }
+.dark-theme .panel, .dark-theme .app-header, .dark-theme .sidebar { background: #202938; color: #e7edf5; }
